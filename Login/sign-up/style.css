@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    animation: bodyani 0.5s linear forwards;
+    background-color: #5050fc;
+    opacity: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes bodyani{
+    to{
+        opacity: 1;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 60px;
+    background-color: rgb(94, 94, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+main form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+main form input{
+    font-size: 16px;
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: all 0.2s linear;
+}
+
+main form input::placeholder{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+main form input:focus{
+    background-color: rgba(198, 198, 255, 0.205);
+    border: white 2px solid;
+}
+
+main form input:focus::placeholder{
+    color: white;
+}
+
+main form input[type=submit]{
+    width: 100px;
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: rgb(94, 94, 255);
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+main form input[type=submit]:hover{
+    background-color: blue;
+}
+
+main form input[type=submit]:active{
+    background-color: #5050fc31;
+}
+
+.continue-sec{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.continue-google-sec, .continue-fb-sec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid black;
+    background-color: #D9392B;
+    width: 150px;
+    padding: 5px 3px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-top: 5px;
+}
+
+.continue-google-sec:hover{
+    background-color: #d9392ba6;
+}
+
+.continue-fb-sec{
+    background-color: #2B4685;
+}
+
+.continue-fb-sec i{
+    color: #2B4685 !important;
+}
+
+.continue-fb-sec:hover{
+    background-color: #2b4685a6;
+}
+
+.continue-google-sec i, .continue-fb-sec i{
+    font-size: 25px;
+    color: #D9392B;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.continue-google-sec p, .continue-fb-sec p{
+    margin-left: 6px;
+}
+
+.login-link{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.login-link a{
+    color: rgba(255, 255, 255, 0.623);
+    text-decoration: underline rgba(255, 255, 255, 0.623);
+}
+
+.login-link a:hover{
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        width: 70%;
+    }
+
+    main form input[type=submit]{
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width:550px){
+    main form input:nth-child(1),
+    main form input:nth-child(2),
+    main form input:nth-child(3){
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:370px){
+    main form input{
+        padding: 6px;
+        font-size: 13px;
+    }
+}

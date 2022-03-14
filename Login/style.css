@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    animation: bodyani 0.5s linear forwards;
+    background-color: #5050fc;
+    opacity: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes bodyani{
+    to{
+        opacity: 1;
+    }
+}
+
+main{
+    padding: 50px 60px;
+    background-color: rgb(94, 94, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.welcome-header{
+    text-align: center;
+}
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-link{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.signup-link a{
+    color: rgba(255, 255, 255, 0.623);
+    text-decoration: underline rgba(255, 255, 255, 0.623);
+}
+
+.signup-link a:hover{
+    color: white;
+}
+
+.login-section{
+    width: 100%;
+}
+
+.login-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-section form input{
+    width: 400px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.5s linear;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.login-section form input[type=submit]{
+    width: 100px;
+    align-self: flex-start;
+    font-weight: bold;
+    background-color: rgb(94, 94, 255);
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.login-section form input[type=submit]:hover{
+    background-color: blue;
+}
+
+.login-section form input[type=submit]:active{
+    background-color: #5050fc31;
+}
+
+.login-section form input::placeholder{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-section form input:focus{
+    background-color: rgba(198, 198, 255, 0.205);
+    border: white 2px solid;
+}
+
+.login-section form input:focus::placeholder{
+    color: white;
+}
+
+.continue-sec{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.continue-google-sec, .continue-fb-sec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid black;
+    background-color: #D9392B;
+    width: 150px;
+    padding: 5px 3px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-top: 5px;
+}
+
+.continue-google-sec:hover{
+    background-color: #d9392ba6;
+}
+
+.continue-fb-sec{
+    background-color: #2B4685;
+}
+
+.continue-fb-sec i{
+    color: #2B4685 !important;
+}
+
+.continue-fb-sec:hover{
+    background-color: #2b4685a6;
+}
+
+.continue-google-sec i, .continue-fb-sec i{
+    font-size: 25px;
+    color: #D9392B;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.continue-google-sec p, .continue-fb-sec p{
+    margin-left: 6px;
+}
+
+@media only screen and (max-width:600px){
+    .login-section form input[type=submit]{
+        width: 40%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width:630px){
+    main{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .login-section form input:nth-child(1),
+    .login-section form input:nth-child(2){
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .welcome-header{
+        font-size: 28px;
+    }
+
+    .login-section form input{
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .welcome-header{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:358px){
+    .signup-link{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:290px){
+    .signup-link{
+        font-size: 10px;
+    }
+
+    .login-section form input{
+        font-size: 14px;
+    }
+}

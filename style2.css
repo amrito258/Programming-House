@@ -1,0 +1,119 @@
+.course-header{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 35px;
+}
+
+.course-sec{
+    margin-top: 40px;
+}
+
+.course-sec h2{
+    padding-left: 10px;
+}
+
+.course-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.free-course, .paid-course{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 270px;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 80px;
+    transition: all 0.2s linear;
+}
+
+.free-course:hover, .paid-course:hover{
+    transform: translateY(-20px);
+}
+
+.course-img-sec{
+    width: 100%;
+    height: 187px;
+}
+
+.course-img-sec img{
+    width: 100%;
+    height: 100%;
+}
+
+.course-txt-sec{
+    background-color: whitesmoke;
+}
+
+.course-txt-sec p{
+    color: black;
+    text-decoration: underline whitesmoke;
+}
+
+.course-name-sec{
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.course-name-sec p{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.price-and-seemore-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5px;
+}
+
+@media only screen and (max-width:250px){
+    .free-course, .paid-course{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:230px){
+    .course-img-sec{
+        height: 160px;
+    }
+
+    .course-header{
+        font-size: 25px !important;
+    }
+
+    .course-sec h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .free-course, .paid-course{
+        width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .course-name-sec p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:370px){
+    .course-header{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:591px){
+    .course-sec h2{
+        text-align: center;
+    }
+}
