@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    animation: bodyani 0.5s linear forwards;
+    background-color: #5050fc;
+    opacity: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes bodyani{
+    to{
+        opacity: 1;
+    }
+}
+
+main{
+    padding: 50px 60px;
+    background-color: rgb(94, 94, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    text-align: center;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main form input{
+    width: 400px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.5s linear;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+main form input[type=submit]{
+    width: 100px;
+    align-self: flex-start;
+    font-weight: bold;
+    background-color: rgb(94, 94, 255);
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+main form input[type=submit]:hover{
+    background-color: blue;
+}
+
+main form input[type=submit]:active{
+    background-color: #5050fc31;
+}
+
+main form input::placeholder{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+main form input:focus{
+    background-color: rgba(198, 198, 255, 0.205);
+    border: white 2px solid;
+}
+
+main form input:focus::placeholder{
+    color: white;
+}
+
+main p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+main p a{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+main p a:hover{
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        width: 70%;
+    }
+
+    main form input[type=submit]{
+        width: 40%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width:530px){
+    main form input{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:362px){
+    main h1{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width:316px){
+    main h1{
+        font-size: 25px;
+    }
+}

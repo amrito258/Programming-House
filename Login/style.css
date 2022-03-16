@@ -76,6 +76,19 @@ main{
     border: 2px solid black;
 }
 
+.login-section form small{
+    align-self: start;
+}
+
+.login-section form small:hover{
+    text-decoration: underline;
+}
+
+.login-section form small a{
+    color: white;
+    text-decoration: none;
+}
+
 .login-section form input[type=submit]{
     width: 100px;
     align-self: flex-start;

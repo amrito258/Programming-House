@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    animation: bodyani 0.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes bodyani{
+    to{
+        opacity: 1;
+    }
+}
+
+::selection{
+    background-color: whitesmoke;
+    color: blue;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(99, 109, 247, 0.904) 0%, #5050fc 52%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.m-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.m-header h1{
+    font-size: 25px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.m-header h1 a{
+    text-decoration: none;
+    color: rgb(235, 232, 232);
+}
+
+.m-header img{
+    width: 70px;
+    height: 70px;
+}
+
+/* nav bar styles start */
+
+.navbar{
+    width: 500px;
+}
+
+.nav-ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links{
+    font-size: 18px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(50, 50, 73);
+}
+
+.nav-links:nth-child(1):hover,
+.nav-links:nth-child(2):hover,
+.nav-links:nth-child(3):hover{
+    text-decoration: underline rgb(50, 50, 73);
+}
+
+.nav-links:last-child{
+    border: 1px solid rgb(50, 50, 73);
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+.nav-links:last-child:hover{
+    background-color: rgb(100, 100, 255);
+    transform: translateY(-5px);
+}
+
+.nav-links:last-child:active{
+    background-color: rgb(85, 85, 192);
+}
+
+/* nav bar styles end */
+
+/* main section styles start */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-section{
+    width: 300px;
+    background-color: #5050fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.email-section img{
+    width: 80%;
+    height: auto;
+    animation: email-ani 1.5s ease-in infinite;
+}
+
+@keyframes email-ani{
+    30%{
+        transform: rotate(10deg);
+    }
+
+    60%{
+        transform: rotate(-10deg);
+    }
+
+    90%{
+        transform: rotate(0deg);
+    }
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+main form input{
+    width: 440px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid black;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s linear;
+    color: black;
+}
+
+main form input:focus, main form textarea:focus{
+    background-color: #6464ff;
+    color: white;
+    border: 2px solid blue;
+}
+
+main form input::placeholder{
+    color: black;
+}
+
+main form input:focus::placeholder, main form textarea:focus::placeholder{
+    color: white;
+}
+
+main form textarea{
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid black;
+    resize: vertical;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s linear;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+main form textarea::placeholder{
+    color: black;
+    transition: all 0.3s linear;
+}
+
+main form input[type=submit]{
+    width: 200px;
+    color: white;
+    background-color: #5050fc;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+main form input[type=submit]:hover{
+    background-color: #8e8ef8;
+}
+
+/* main section styles end */
+
+/* media query of contact section start */
+
+@media only screen and (max-width:570px){
+    main form textarea{
+        width: 90%;
+    }
+
+    main form input{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    main form input, main form textarea{
+        padding: 6px;
+    }
+
+    main form input[type=submit]{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:340px){
+    .email-section{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width:320px){
+    main form textarea{
+        height: 240px;
+        font-style: 14px;
+    }
+
+    main form input{
+        font-size: 14px;
+    }
+
+    .contact-header{
+        font-size: 25px;
+    }
+}
+
+/* media query of contact section end */
