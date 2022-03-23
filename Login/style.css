@@ -73,6 +73,7 @@ main{
     transition: all 0.5s linear;
     outline: none;
     border-radius: 5px;
+    color: black;
     border: 2px solid black;
 }
 
@@ -115,6 +116,7 @@ main{
 .login-section form input:focus{
     background-color: rgba(198, 198, 255, 0.205);
     border: white 2px solid;
+    color: white;
 }
 
 .login-section form input:focus::placeholder{

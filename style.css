@@ -74,6 +74,7 @@ header{
     font-size: 18px;
     padding: 0 10px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .nav-links a{
@@ -147,7 +148,7 @@ header{
     background-color: white;
     border-radius: 30px;
     color: black;
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
     font-weight: bold;
     z-index: 2;
 }
@@ -194,6 +195,10 @@ header{
     .intro-text a{
         padding: 10px 90px;
     }
+
+    .download-apps-sec-img div{
+        width: 160px !important;
+    }
 }
 
 @media only screen and (max-width:290px){
@@ -203,6 +208,10 @@ header{
 
     .intro-text a{
         padding: 10px 50px;
+    }
+
+    .build-your-future h1{
+        font-size: 10px !important;
     }
 }
 
@@ -265,11 +274,23 @@ header{
     .reponsive-sec h1{
         font-size: 25px !important;
     }
+
+    .reponsive-sec h2{
+        font-size: 20px;
+    }
+
+    .build-your-future img{
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width:390px){
     .reponsive-sec h1{
         font-size: 20px !important;
+    }
+
+    .reponsive-sec h2{
+        font-size: 18px;
     }
 }
 
@@ -277,24 +298,121 @@ header{
 
 /* media query of new to programming section start */
 
-@media only screen and (max-width:550px){
-    .new-to-programming-sec img{
-        width: 90% !important;
-        align-self: center;
-    }
-}
-
-@media only screen and (max-width:430px){
-    .new-to-programming-sec h2{
-        font-size: 20px;
+@media only screen and (max-width:500px){
+    .new-to-prog-box{
+        width: 90%;
     }
 
-    .new-to-programming-sec h3{
-        font-size: 16px;
+    .success-story-box img{
+        width: 94% !important;
     }
 }
 
 /* media query of new to programming section end */
+
+/* why-programming section media query start */
+
+@media only screen and (max-width:470px){
+    .why-programming-sec h1{
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .why-programming-sec h1{
+        font-size: 25px !important;
+    }
+
+    .success-story-sec h1{
+        font-size: 25px !important;
+    }
+
+    .success-story-sec h1 span{
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width:1283px){
+    .why-prog-card-1,
+    .why-prog-card-2,
+    .why-prog-card-3{
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width:983px){
+    .why-prog-card-1,
+    .why-prog-card-2,
+    .why-prog-card-3{
+        width: 270px !important;
+    }
+}
+
+@media only screen and (max-width:893px){
+    .why-prog-card-1,
+    .why-prog-card-2,
+    .why-prog-card-3{
+        width: 500px !important;
+    }
+}
+
+@media only screen and (max-width:580px){
+    .why-prog-card-1,
+    .why-prog-card-2,
+    .why-prog-card-3{
+        width: 90% !important;
+    }
+}
+
+/* why-programming section media query end */
+
+/* help people section styles start */
+
+@media only screen and (max-width:650px){
+    .help-people-img-sec img{
+        width: 95% !important;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .help-people-sec h1{
+        font-size: 28px !important;
+    }
+}
+
+@media only screen and (max-width:490px){
+    .help-people-sec h1{
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (max-width:370px){
+    .help-people-sec h1{
+        font-size: 18px !important;
+    }
+
+    .build-your-future h1{
+        font-size: 32px !important;
+    }
+}
+
+/* help people section styles end */
+
+/* success story section styles start */
+
+@media only screen and (max-width:810px){
+    .success-story-box{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:274px){
+    .success-story-sec h1{
+        font-size: 22px !important;
+    }
+}
+
+/* success story section styles end */
 
 /* media query of index end */
 
@@ -348,7 +466,13 @@ header{
 }
 
 .reponsive-sec h1{
-    font-size: 30px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 580;
+}
+
+.reponsive-sec h2{
+    font-weight: 550;
     text-align: center;
 }
 
@@ -362,28 +486,329 @@ header{
     height: 100%;
 }
 
+.download-apps-sec{
+    margin-top: 20px;
+}
+
+.download-apps-sec-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.download-apps-sec-img div{
+    width: 200px;
+    margin-top: 20px;
+}
+
+.download-apps-sec div a img{
+    width: 100%;
+    height: auto;
+}
+
+.download-apps-sec div:nth-child(1){
+    margin-right: 4px;
+}
+
+.download-apps-sec div:nth-child(2){
+    margin-left: 4px;
+}
+
 /* responsive sec styles end */
+
+/* why programming section styles start */
+
+.why-programming-sec{
+    padding: 80px 0;
+}
+
+.why-programming-sec h1{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.why-programming-sec h1 span{
+    animation: why-prog-header-ani 1s cubic-bezier(.53,.51,.53,.51) infinite;
+    opacity: 0;
+}
+
+@keyframes why-prog-header-ani{
+    to{
+        opacity: 1;
+    }
+}
+
+.why-prog-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.why-prog-card-1,
+.why-prog-card-2,
+.why-prog-card-3{
+    border: 4px solid #5050fc;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.why-prog-card-img{
+    width: 100%;
+}
+
+.why-prog-card-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.why-prog-card-body{
+    padding: 8px;
+}
+
+.why-prog-card-body h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.why-prog-card-body p{
+    text-align: center;
+    font-weight: 500;
+}
+
+/* why programming section styles end */
 
 /* new to programming section styles start */
 
-.new-to-programming-sec{
-    padding: 50px 0;
+.new-to-programming{
+    background-color: #3d40ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.new-to-prog-box img{
+    width: 70%;
+}
+
+.new-to-programming .new-to-prog-box{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 550px;
+}
+
+.new-to-prog-box h3 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.new-to-prog-box h3 a:hover{
+    text-decoration: underline;
+}
+
+/* new to programming section styles end */
+
+/* help people section styles start */
+
+.help-people-sec h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 80px 6px;
+}
+
+.help-people-img-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-people-img-sec img{
+    width: 600px;
+}
+
+/* help people section styles end */
+
+/* success story section start */
+
+.success-story-sec{
+    background-color: #5050fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 8px;
+}
+
+.success-story-sec h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.success-story-sec h1 span{
+    font-size: 40px;
+    color: white;
+}
+
+.success-story-box{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.success-story-sec img{
+    width: 70%;
+}
+
+.success-story-box p{
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 8px;
+}
+
+.success-story-box h3{
+    font-weight: 550;
+    margin-top: 30px;
+}
+
+/* success story section end */
+
+/* build your future section start */
+
+.build-your-future{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.build-your-future h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.build-your-future p{
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 5px 30px;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+.build-your-future p:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+    transform: translateY(-5px);
+}
+
+.build-your-future p a{
+    color: black;
+    text-decoration: none;
+}
+
+.build-your-future img{
+    width: 600px;
+}
+
+/* build your future section end */
+
+/* footer section styles start */
+
+footer{
+    background-color: #5050fc;
+}
+
+.footer-social-sec{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.social-links{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+
+.social-links i{
+    font-size: 30px;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.social-links i:hover{
+    transform: translateY(-6px);
+}
+
+.social-links p{
     text-align: center;
+    font-size: 14px;
+    color: white;
 }
 
-.new-to-programming-sec img{
-    width: 500px;
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links img{
+    width: 300px;
+    margin-right: 100px;
+}
+
+.footer-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.footer-links div:nth-child(1){
+    margin-right: 10px;
+}
+
+.footer-links div:nth-child(2){
+    margin-left: 10px;
+}
+
+.footer-links div p a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.footer-links div p a:hover{
+    text-decoration: underline;
+}
+
+.copyright-sec{
+    text-align: center;
     margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.new-to-programming-sec img:hover{
-    opacity: 0.9;
+.copyright-sec small{
+    font-size: 12px;
+    color: white;
 }
 
-/* new to programming section styles end */
+/* footer section styles end */

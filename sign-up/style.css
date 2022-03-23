@@ -50,6 +50,7 @@ main form input{
     border-radius: 5px;
     border: 2px solid black;
     transition: all 0.2s linear;
+    color: black;
 }
 
 main form input::placeholder{
@@ -60,6 +61,7 @@ main form input::placeholder{
 main form input:focus{
     background-color: rgba(198, 198, 255, 0.205);
     border: white 2px solid;
+    color: white;
 }
 
 main form input:focus::placeholder{

@@ -53,6 +53,7 @@ main form input{
     outline: none;
     border-radius: 5px;
     border: 2px solid black;
+    color: black;
 }
 
 main form input[type=submit]{
@@ -81,6 +82,7 @@ main form input::placeholder{
 main form input:focus{
     background-color: rgba(198, 198, 255, 0.205);
     border: white 2px solid;
+    color: white;
 }
 
 main form input:focus::placeholder{
