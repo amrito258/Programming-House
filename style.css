@@ -414,6 +414,17 @@ header{
 
 /* success story section styles end */
 
+/* media query of blog section start */
+
+@media only screen and (max-width:941px){
+    .our-blogs h1{
+        text-align: center;
+        padding-left: 0 !important;
+    }
+}
+
+/* media query of blog section end */
+
 /* media query of index end */
 
 /* section 2 styles start */
@@ -700,20 +711,23 @@ header{
 
 .build-your-future p{
     font-size: 18px;
-    border: 2px solid black;
-    padding: 5px 30px;
-    border-radius: 20px;
     transition: all 0.2s linear;
 }
 
 .build-your-future p:hover{
-    background-color: rgba(0, 0, 0, 0.13);
     transform: translateY(-5px);
+}
+
+.build-your-future p a:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
 .build-your-future p a{
     color: black;
     text-decoration: none;
+    border: 2px solid black;
+    padding: 5px 30px;
+    border-radius: 20px;
 }
 
 .build-your-future img{
@@ -721,6 +735,73 @@ header{
 }
 
 /* build your future section end */
+
+/* our blogs section styles start */
+
+.our-blogs{
+    background-color: whitesmoke;
+    padding: 30px 0;
+}
+
+.our-blogs h1{
+    padding-left: 20px;
+}
+
+.see-more-blog{
+    text-align: center;
+}
+
+.see-more-blog a:hover{
+    background-color: #5050fc9c;
+}
+
+.see-more-blog a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: #5050fc;
+    border-radius: 20px;
+    padding: 6px 30px;
+    transition: all 0.2s linear;
+}
+
+.blogs-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.blog{
+    width: 280px;
+    height: 250px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin: 15px;
+    transition: all 0.3s linear;
+}
+
+.blog:hover{
+    transform: translateY(-10px);
+}
+
+.blog img{
+    width: 100%;
+    height: 160px;
+}
+
+.blog a{
+    color: black;
+    text-decoration: none;
+}
+
+.blog p{
+    font-size: 18px;
+    padding: 6px;
+}
+
+/* our blogs section end */
 
 /* footer section styles start */
 

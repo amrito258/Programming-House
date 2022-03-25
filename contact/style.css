@@ -43,6 +43,7 @@ header{
 .m-header h1{
     font-size: 25px;
     padding-left: 5px;
+    text-align: center;
     font-weight: bold;
 }
 

@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #5050fc;
+    font-family: 'Poppins', sans-serif;
+    animation: bodyani 0.5s linear forwards;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+@keyframes bodyani{
+    to{
+        opacity: 1;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 60px;
+    background-color: rgb(94, 94, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+}
+
+main .header{
+    text-align: center;
+    width: 270px;
+}
+
+main img{
+    width: 100px;
+}
+
+main form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main form input{
+    font-size: 16px;
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: all 0.2s linear;
+    color: black;
+}
+
+main form input::placeholder{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+main form input:focus{
+    background-color: rgba(198, 198, 255, 0.205);
+    border: white 2px solid;
+    color: white;
+}
+
+main form input:focus::placeholder{
+    color: white;
+}
+
+main form input[type=submit]{
+    width: 100px;
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: rgb(94, 94, 255);
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+main form input[type=submit]:hover{
+    background-color: blue;
+}
+
+main form input[type=submit]:active{
+    background-color: #5050fc31;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        width: 70%;
+    }
+
+    main form input[type=submit]{
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width:550px){
+    main form input{
+        width: 90%;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:370px){
+    main form input{
+        padding: 6px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:388px){
+    main .header h1{
+        font-size: 25px;
+    }
+}

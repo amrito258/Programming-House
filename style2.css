@@ -34,6 +34,10 @@
     transition: all 0.2s linear;
 }
 
+.free-course a, .paid-course a{
+    text-decoration: none;
+}
+
 .free-course:hover, .paid-course:hover{
     transform: translateY(-20px);
 }
@@ -54,7 +58,6 @@
 
 .course-txt-sec p{
     color: black;
-    text-decoration: underline whitesmoke;
 }
 
 .course-name-sec{
