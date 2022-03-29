@@ -210,7 +210,7 @@ header{
         padding: 10px 50px;
     }
 
-    .build-your-future h1{
+    .build-your-future .build-your-future-header{
         font-size: 10px !important;
     }
 }
@@ -270,7 +270,7 @@ header{
         width: 100% !important;
     }
 
-    .reponsive-sec h1{
+    .reponsive-sec .responsive-sec-header{
         font-size: 25px !important;
     }
 
@@ -284,7 +284,7 @@ header{
 }
 
 @media only screen and (max-width:390px){
-    .reponsive-sec h1{
+    .reponsive-sec .responsive-sec-header{
         font-size: 20px !important;
     }
 
@@ -328,6 +328,10 @@ header{
 
     .success-story-sec h1 span{
         font-size: 30px !important;
+    }
+
+    .blog p{
+        font-size: 16px !important;
     }
 }
 
@@ -374,24 +378,20 @@ header{
 }
 
 @media only screen and (max-width:780px){
-    .help-people-sec h1{
+    .help-people-sec .help-people-sec-header{
         font-size: 28px !important;
     }
 }
 
 @media only screen and (max-width:490px){
-    .help-people-sec h1{
+    .help-people-sec .help-people-sec-header{
         font-size: 24px !important;
     }
 }
 
 @media only screen and (max-width:370px){
-    .help-people-sec h1{
+    .help-people-sec .help-people-sec-header{
         font-size: 18px !important;
-    }
-
-    .build-your-future h1{
-        font-size: 32px !important;
     }
 }
 
@@ -413,12 +413,28 @@ header{
 
 /* success story section styles end */
 
+/* build your future section media query start */
+
+@media only screen and (max-width:383px){
+    .build-your-future .build-your-future-header{
+        font-size: 32px !important;
+    }
+}
+
+/* build your future section media query start */
+
 /* media query of blog section start */
 
 @media only screen and (max-width:941px){
     .our-blogs h1{
         text-align: center;
         padding-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width:306px){
+    .build-your-future .build-your-future-header{
+        font-size: 26px !important;
     }
 }
 
@@ -470,7 +486,7 @@ header{
     padding: 40px 0;
 }
 
-.reponsive-sec h1{
+.reponsive-sec .responsive-sec-header{
     font-size: 35px;
     text-align: center;
     font-weight: 580;
@@ -633,7 +649,7 @@ header{
 
 /* help people section styles start */
 
-.help-people-sec h1{
+.help-people-sec .help-people-sec-header{
     font-size: 35px;
     text-align: center;
     padding: 80px 6px;
@@ -709,7 +725,7 @@ header{
     padding: 80px 0;
 }
 
-.build-your-future h1{
+.build-your-future .build-your-future-header{
     font-size: 40px;
     text-align: center;
     font-weight: 599;
