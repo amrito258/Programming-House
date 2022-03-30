@@ -23,6 +23,7 @@ main{
     font-size: 100px;
     animation: email-ani 1.5s ease-in infinite;
     text-decoration: underline #5050fc;
+    color: white;
 }
 
 @keyframes email-ani{
