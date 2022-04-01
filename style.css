@@ -440,6 +440,44 @@ header{
 
 /* media query of blog section end */
 
+/* become an instructor section media query start */
+
+@media only screen and (max-width:1099px){
+    .becomne-an-instructor-img{
+        width: 500px !important;
+    }
+}
+
+@media only screen and (max-width:899px){
+    .becomne-an-instructor-text{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .becomne-an-instructor-img{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .becomne-an-instructor-text h2{
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .becomne-an-instructor-text h2{
+        font-size: 20px !important;
+    }
+
+    .becomne-an-instructor-text p{
+        font-size: 14px !important;
+    }
+}
+
+/* become an instructor section media query end */
+
 /* media query of index end */
 
 /* section 2 styles start */
@@ -757,6 +795,55 @@ header{
 }
 
 /* build your future section end */
+
+/* becomne-an-instructor section start */
+
+.becomne-an-instructor-sec{
+    background-color: #5050fc;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px 0;
+    flex-wrap: wrap;
+}
+
+.becomne-an-instructor-img{
+    width: 700px;
+}
+
+.becomne-an-instructor-img img{
+    width: 100%;
+}
+
+
+.becomne-an-instructor-text{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 400px;
+}
+
+.becomne-an-instructor-text h2{
+    font-weight: 599;
+    font-size: 28px;
+}
+
+.becomne-an-instructor-text a{
+    color: black;
+    background-color: white;
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.2s linear;
+}
+
+.becomne-an-instructor-text a:hover{
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+/* becomne-an-instructor section end */
 
 /* our blogs section styles start */
 
