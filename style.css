@@ -829,18 +829,24 @@ header{
     font-size: 28px;
 }
 
+.becomne-an-instructor-text p{
+    padding: 5px;
+}
+
 .becomne-an-instructor-text a{
     color: black;
     background-color: white;
-    padding: 6px 15px;
+    border: 1px solid black;
+    padding: 6px 20px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 20px;
     transition: all 0.2s linear;
 }
 
 .becomne-an-instructor-text a:hover{
     background-color: rgba(255, 255, 255, 0.521);
+    transform: translateY(-5px);
 }
 
 /* becomne-an-instructor section end */
