@@ -7,6 +7,10 @@ main{
     justify-content: center;
 }
 
+main a{
+    text-decoration: none;
+}
+
 .email-section{
     background-color: #5050fc;
     display: flex;
@@ -19,10 +23,13 @@ main{
     margin-left: auto;
 }
 
+.email-section:hover{
+    background-color: #6868fa;
+}
+
 .email-section i{
     font-size: 100px;
     animation: email-ani 1.5s ease-in infinite;
-    text-decoration: underline #5050fc;
     color: white;
 }
 
@@ -38,23 +45,6 @@ main{
     90%{
         transform: rotate(0deg);
     }
-}
-
-.email-section .fill{
-    width: 180%;
-    height: 180%;
-    background-color: #8e8ef8;
-    position: absolute;
-    transform: translateY(50%) translateX(-90%);
-    border-radius: 0 180px 0 0;
-    transition: all 0.5s linear;
-    z-index: 1;
-}
-
-.email-section:hover .fill{
-    top: 0;
-    right: 0;
-    transform: translateY(0) translateX(0);
 }
 
 main form{

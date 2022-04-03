@@ -52,8 +52,8 @@ header{
 }
 
 .m-header img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
 /* nav bar styles start */
@@ -297,13 +297,19 @@ header{
 
 /* media query of new to programming section start */
 
-@media only screen and (max-width:500px){
-    .new-to-prog-box{
-        width: 90%;
+@media only screen and (max-width:789px){
+    .new-to-programming-text-sec{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .new-to-programming-text-sec h2{
+        font-size: 24px !important;
     }
 
-    .success-story-box img{
-        width: 94% !important;
+    .new-to-programming-text-sec p{
+        font-size: 16px !important;
     }
 }
 
@@ -590,7 +596,7 @@ header{
     font-size: 40px;
 }
 
-.why-programming-sec h1 span{
+.why-programming-sec h1 span, .new-to-programming h2 span{ 
     animation: why-prog-header-ani 1s cubic-bezier(.53,.51,.53,.51) infinite;
     opacity: 0;
 }
@@ -646,40 +652,43 @@ header{
 /* new to programming section styles start */
 
 .new-to-programming{
-    background-color: #5050fc;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 0;
+    justify-content: space-evenly;
+    background-color: #5050fc;
+    padding: 60px 0;
 }
 
-.new-to-prog-box img{
-    width: 60%;
+.new-to-programming-img-sec{
+    width: 400px;
+    margin: 10px;
 }
 
-.new-to-programming .new-to-prog-box{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    padding: 20px;
-    border-radius: 20px;
-    width: 550px;
+.new-to-programming-img-sec img{
+    width: 100%;
 }
 
-.new-to-prog-box h3{
-    font-weight: 590;
-    font-size: 25px;
+.new-to-programming-text-sec{
+    width: 350px;
+    margin: 10px;
 }
 
-.new-to-prog-box h3:last-child{
-    font-size: 20px;
+.new-to-programming-text-sec h2{
+    font-size: 30px;
+    font-weight: 599;
 }
 
-.new-to-prog-box h3 a{
-    color: rgb(255, 255, 255);
+.new-to-programming-text-sec p{
+    font-size: 18px;
+}
+
+.new-to-programming-text-sec p a{
+    color: white;
     text-decoration: none;
 }
 
-.new-to-prog-box h3 a:hover{
+.new-to-programming-text-sec p a:hover{
     text-decoration: underline;
 }
 
@@ -837,7 +846,7 @@ header{
     color: black;
     background-color: white;
     border: 1px solid black;
-    padding: 6px 20px;
+    padding: 6px 30px;
     text-decoration: none;
     border-radius: 20px;
     margin-top: 20px;
